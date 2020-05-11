@@ -1,0 +1,14 @@
+LAMP workstation:
+Under Windows 10 (192.168.1.113), in Oracle VM virtualbox, Ubuntu is installed (192.168.1.213).
+The big partition is mounted on /var for Apache and MySQL.
+Ubuntu username:user password:0812 Can run root command using sudo. Can SSH to login remotely.
+
+Under Ubuntu (192.168.1.213), apache2 is installed. The code is under /var/www/html
+
+Under Ubuntu (192.168.1.213), MySQL is installed. The root user's password is "Shaw256!@" (without double quotation symbols).
+The common user "sinnud" has password "Jeffery45!@".
+The user "phpmyadmin" has password "Jeffery45!@".
+
+The WorkPress has also been installed with user "sinnud" and password "ldu.zsh" as administrator.
+
+The Phpmyadmin has been installed (http://192.168.1.213/phpmyadmin). Use double login with user "sinnud".
