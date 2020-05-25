@@ -29,3 +29,11 @@ cd blog
 python manage.py runserver 192.168.1.213:8000
 Ctrl+c to stop
 deactivate
+
+2020-05-24
+In order to test database partition, install postgresql
+Following: https://help.ubuntu.com/community/PostgreSQL
+The admin user name: postgres password: Shaw256!@
+First database: dbhuge
+User: sinnud from 192.168.1.210 can connect to postgresql (need test)
+The password for user sinnud is: Jeffery45!@
