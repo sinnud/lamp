@@ -37,3 +37,17 @@ The admin user name: postgres password: Shaw256!@
 First database: dbhuge
 User: sinnud from 192.168.1.210 can connect to postgresql (need test)
 The password for user sinnud is: Jeffery45!@
+
+psql simple command cheating sheet:
+psql -U postgres
+       : connect using root account
+psql -U sinnud -h localhost -d dbhuge
+       : connect localhost using sinnud account with database dbhuge
+\l - Display database
+\c - Connect to database
+\dn - List schemas
+\dt - List tables inside public schemas
+\dt schema1. - List tables inside particular schemas. For eg: 'schema1'
+set search_path to schema_name
+       : use special schema
+\d tbl_name - show table structure
