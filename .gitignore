@@ -1,0 +1,6 @@
+# virtual environment folder
+env/
+# Python cache folder
+blog/blog/__pycache__
+blog/blogsite/__pycache__
+blog/blogsite/migrations/__pycache__

@@ -51,3 +51,31 @@ psql -U sinnud -h localhost -d dbhuge
 set search_path to schema_name
        : use special schema
 \d tbl_name - show table structure
+
+pgadmin3 crach, so uninstalled. adminer is used: http://192.168.1.213/adminer.php
+System: PostgreSQL
+Server: localhost
+Username: sinnud
+Password: Jeffery45!@
+
+
+Greenplum in docker
+https://medium.com/@kochan/building-greenplum-oss-docker-a9a959badf23
+Modify ~/docker/greenplum-oss-docker/gpdb/run_ossdocker.sh such that do not conflict with PostgreSQL port 5432.
+Run the above modified script. Then run
+startGPDB.sh
+The above script will start Greenplum.
+The following command to check Greenplum run:
+su - gpadmin
+psql
+select version();
+https://greenplum.org/user-and-schema-creation-in-greenplum-database/
+create user sinnud WITH PASSWORD 'password';
+create database wdinfo;
+GRANT ALL PRIVILEGES ON  DATABASE wdinfo  TO sinnud;
+ALTER USER sinnud WITH ENCRYPTED PASSWORD 'password';
+su - gpadmin
+psql -U sinnud -h localhost -d wdinfo
+\password
+create schema wdinfo;
+\q
