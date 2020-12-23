@@ -79,3 +79,6 @@ psql -U sinnud -h localhost -d wdinfo
 \password
 create schema wdinfo;
 \q
+
+
+GitHub token: 1e8b3127253589cdba3154579bf231efc8280fcd
