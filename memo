@@ -80,5 +80,5 @@ psql -U sinnud -h localhost -d wdinfo
 create schema wdinfo;
 \q
 
-
+delete ~/.gitcibfug and ~/.git-credential to get back to user password.
 GitHub token: 192.168.1.213/home/user/github.token.sinnud
